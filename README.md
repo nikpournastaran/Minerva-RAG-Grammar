@@ -33,3 +33,51 @@ graph TD
     E -->|Context + Query| F[🤖 Minerva LLM]
     F -->|Grammar Analysis| G(💬 Text Response)
     G -->|gTTS| H[🔊 Audio Feedback]
+
+🛠️ Tech Stack
+Language: Python
+
+Interface: Gradio
+
+Speech Recognition: OpenAI Whisper
+
+LLM: SapienzaNLP/Minerva-7B-instruct-v1.0
+
+Orchestration: LangChain
+
+Audio Processing: gTTS, Librosa
+
+🚀 How to Run
+Click the Open in Colab badge above.
+
+Connect to a T4 GPU runtime.
+
+Install dependencies (automatically handled in the first cell).
+
+Run the main application cell.
+
+Click the public gradio.live link.
+
+Usage
+Upload Context: Drag and drop your grammar rule files (.txt) into the sidebar.
+
+Update: Click "Update Knowledge Base".
+
+Speak: Record your question or sentence in Italian.
+
+Listen: The AI will analyze your grammar based on the uploaded rules.
+
+📂 Project Structure
+.
+├── app.py               # Main application logic (Gradio + RAG pipeline)
+├── requirements.txt     # List of python dependencies
+├── data/                # Sample grammar rules (for testing)
+│   ├── ab_questions.txt
+│   └── grammar_rules.txt
+└── README.md            # Project documentation
+🤝 Acknowledgments
+Sapienza NLP Team for the Minerva LLM.
+
+OpenAI for the Whisper model.
+
+Hugging Face for the transformers library.
