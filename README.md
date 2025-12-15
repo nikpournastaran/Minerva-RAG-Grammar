@@ -1,5 +1,5 @@
 # 🇮🇹 Italian Grammar Voice Assistant (RAG Pipeline)
-fhxdgfxdfg
+
 > **Master's Thesis Project**
 > An interactive AI tutor that listens to Italian speech, analyzes grammar using Retrieval-Augmented Generation (RAG), and provides vocal feedback.
 
